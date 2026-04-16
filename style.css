@@ -1,0 +1,153 @@
+/* --- Variáveis Globais --- */
+:root {
+    --bg-dark: #0a0c10;
+    --accent-green: #22c55e;
+    --text-muted: #a1a1aa;
+}
+
+body {
+    background-color: var(--bg-dark);
+    font-family: 'Inter', sans-serif;
+    color: white;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- 1. Navbar Estilo "Clear Glass" (Igual à Imagem 2) --- */
+.navbar {
+    /* Fundo extremamente transparente para o efeito de vidro claro */
+    background: rgba(255, 255, 255, 0.07); 
+    
+    /* O desfoque (blur) cria a sensação de profundidade */
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px);
+    
+    /* Borda inferior sutil para delimitar o menu */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+    
+    padding: 0.8rem 0;
+    transition: all 0.3s ease;
+    z-index: 1050;
+}
+
+.nav-logo {
+    height: 32px;
+    width: auto;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-green) !important;
+}
+
+/* Botão da Navbar (Verde Sólido e Elegante) */
+.btn-nav-cta {
+    background-color: var(--accent-green);
+    color: white !important;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    padding: 0.6rem 1.4rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn-nav-cta:hover {
+    background-color: #16a34a;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+}
+
+/* --- 2. Hero Section (Background com Opacidade 0.75) --- */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 0; /* Background sobe até o topo */
+    background-color: var(--bg-dark);
+
+    background-image: 
+        /* Holofote Verde Superior */
+        radial-gradient(circle at 50% -20%, rgba(34, 197, 94, 0.25) 0%, transparent 50%),
+        /* Escurecedor ajustado para 0.75 conforme solicitado */
+        linear-gradient(180deg, rgba(10, 12, 16, 0.75) 0%, rgba(10, 12, 16, 1) 100%),
+        /* Imagem de Fundo (Hexágonos) */
+        url('hero-bg.png'); 
+    
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+/* --- 3. Tipografia e Panda --- */
+
+/* Panda Mascot posicionado abaixo dos botões */
+.hero-panda {
+    height: 100px;
+    width: auto;
+    filter: drop-shadow(0 0 20px rgba(34, 197, 94, 0.3));
+    opacity: 0.9;
+}
+
+/* Título Impactante (Mais alto que largo) */
+.hero-title {
+    font-size: 4.5rem;
+    line-height: 1.05;
+    letter-spacing: -3px; 
+    transform: scaleY(1.1); 
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Badge Superior */
+.custom-badge {
+    background-color: rgba(34, 197, 94, 0.1);
+    color: var(--accent-green);
+    border: 1px solid rgba(34, 197, 94, 0.2);
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+/* --- Estilização dos Botões do Hero --- */
+.btn-success {
+    background-color: var(--accent-green);
+    border: none;
+    border-radius: 12px;
+}
+
+.btn-outline-light {
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #22c55e, #4ade80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-secondary-custom {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.shadow-glow {
+    box-shadow: 0 10px 30px rgba(34, 197, 94, 0.3);
+}
+
+.shadow-glow:hover {
+    box-shadow: 0 15px 40px rgba(34, 197, 94, 0.5);
+    transform: translateY(-3px);
+}
