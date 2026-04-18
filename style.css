@@ -208,3 +208,148 @@ body {
 .card-funcs .icone{
     font-size: 1.8rem;
 }
+
+/* --- 4. Terceira Dobra: Seção de Passos (Como Funciona - Estilo Claro) --- */
+
+.steps-section {
+    background-color: #ffffff; /* Fundo branco para tons claros */
+    padding: 100px 0;
+}
+
+/* Card de Passo Individual */
+.step-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb; /* Borda cinza clara sutil */
+    border-radius: 24px;
+    padding: 40px;
+    text-align: left;
+    height: 100%;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+/* Efeito de destaque no Hover */
+.step-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05); /* Sombra suave */
+    border-color: var(--green-titles); /* Usa o tom de verde dos títulos */
+}
+
+/* Número Gigante (01, 02, etc.) */
+.step-number {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--green-titles); /* O mesmo tom de verde da imagem */
+    opacity: 0.9; /* Transparência para o efeito de marca d'água */
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Título do Passo */
+.step-title {
+    color: #111111; /* Texto quase preto para contraste no fundo branco */
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: -0.5px;
+}
+
+/* Descrição do Passo */
+.step-desc {
+    color: var(--green-desc); /* Tom de verde acinzentado do seu :root */
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Ajustes de Título e Badge para esta seção clara */
+.steps-section .sections-title {
+    color: #000000;
+}
+
+.steps-section .title-highlight {
+    color: var(--green-titles);
+    text-decoration: underline var(--green-titles) 1px;
+}
+
+.steps-section .custom-green-badge {
+    background-color: rgba(219, 234, 224, 1);
+    color: var(--green-titles);
+    border: none;
+}
+
+
+/* --- 5. Quarta Dobra: Seção de Diferenciais (Why PandaPlan) --- */
+
+.why-section {
+    background-color: var(--bg-dark); /* Fundo escuro para contraste */
+    padding: 100px 0;
+}
+
+/* Card de Diferencial */
+.why-card {
+    background: rgba(255, 255, 255, 0.03); /* Vidro escuro */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 45px 30px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Efeito de brilho no Hover */
+.why-card:hover {
+    background: rgba(34, 197, 94, 0.04); /* Leve brilho verde no fundo */
+    border-color: var(--accent-green);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Estatística/Número de Destaque (100%, IA, 3x) */
+.why-stat {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--accent-green); /* Verde brilhante */
+    margin-bottom: 15px;
+    letter-spacing: -2px;
+    display: block;
+}
+
+/* Título do Card */
+.why-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+/* Descrição do Card */
+.why-desc {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Ajustes de Títulos para seção escura */
+.why-section .sections-title {
+    color: white;
+}
+
+.why-section .title-highlight {
+    color: var(--accent-green);
+    text-decoration: underline var(--accent-green) 1px;
+}
+
+/* Ajuste da Badge para fundo escuro */
+.why-section .custom-green-badge {
+    background-color: rgba(34, 197, 94, 0.1);
+    color: var(--accent-green);
+    border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+    .why-stat {
+        font-size: 2.8rem;
+    }
+}
