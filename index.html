@@ -12,10 +12,10 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="./panda-mascot.png" alt="Logo" class="nav-logo me-2">
+                <img src="./panda-plan.png" alt="Logo" class="nav-logo me-2">
                 <span class="fw-bold fs-4 text-white">Panda<span class="text-success">Plan</span></span>
             </a>
             
@@ -26,18 +26,18 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link px-3 fw-medium" href="#">Funcionalidades</a>
+                        <a class="nav-link px-3 fw-medium" href="#funcionalidades">Funcionalidades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-3 fw-medium" href="#">Como funciona</a>
+                        <a class="nav-link px-3 fw-medium" href="#como-funciona">Como funciona</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-3 fw-medium" href="#">Diferenciais</a>
+                        <a class="nav-link px-3 fw-medium" href="#diferenciais">Diferenciais</a>
                     </li>
                 </ul>
                 
                 <div class="d-flex align-items-center">
-                    <a class="btn btn-nav-cta fw-bold px-4" href="#">Começar Grátis</a>
+                    <a class="btn btn-nav-cta fw-bold px-4" href="#">Começar!</a>
                 </div>
             </div>
         </div>
@@ -61,69 +61,159 @@
                     
                     <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mb-5 w-100">
                         <a href="#" class="btn btn-success btn-lg px-5 py-3 fw-bold shadow-glow">
-                            Começar agora - grátis
+                            Começar agora
                         </a>
-                        <a href="#" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold">
+                        <a href="#como-funciona" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold">
                             Ver como funciona
                         </a>
                     </div>
 
                     <div class="mt-2">
-                        <img src="./panda-mascot.png" alt="Panda Mascot" class="hero-panda">
+                        <img src="./panda-plan.png" alt="Panda Mascot" class="hero-panda">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--dobra 2: funcionalidades?-->
-    <section class="func-section py-5">
+    <section id="funcionalidades" class="func-section py-5">
         <div class="container text-center text-black">
-            <span class="badge rounded-pill custom-green-badge mb-6">
+            <span class="badge rounded-pill custom-green-badge mb-3">
                 Funcionalidades
             </span>
 
-            <h3 class="sections-title fw-extra-bold">Tudo para você <span class="title-highlight">dominar o mandarim</span></h3>
+            <h3 class="sections-title fw-extra-bold mb-5">Tudo para você <span class="title-highlight">dominar o mandarim</span></h3>
 
             <div class="row justify-content-center">
-                <div class="col-9">
-                    <div class="row row-cols-3 align-items-center">
-                        <!-- cards-->
-                        <div class="card-funcs">
-                            <span class="icone">🧠</span>                        
-                            <p class="titulo">Diagnóstico com IA que mapeia seu perfil</p>
-                            <p class="desc">Um questionário inteligente identifica seu nível, objetivos e estilo de aprendizado — seu plano é gerado em segundos.</p>
+                <div class="col-12 col-lg-10">
+                    <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 align-items-stretch">
+                        <div class="col">
+                            <div class="card-funcs h-100">
+                                <span class="icone">🤖</span>                        
+                                <p class="titulo">Diagnóstico com IA que mapeia seu perfil</p>
+                                <p class="desc">Um questionário inteligente identifica seu nível, objetivos e estilo de aprendizado em segundos.</p>
+                            </div>
                         </div>
 
-                        <div class="card-funcs">
-                            <span class="icone">📚</span>                        
-                            <p class="titulo">Conteúdo curado para o seu estilo</p>
-                            <p class="desc">Videoaulas, podcasts e textos escolhidos pela IA, alinhados à forma como você aprende melhor.</p>
+                        <div class="col">
+                            <div class="card-funcs h-100">
+                                <span class="icone">📚</span>                        
+                                <p class="titulo">Conteúdo curado para o seu estilo</p>
+                                <p class="desc">Videoaulas, podcasts e textos escolhidos pela IA, alinhados à forma como você aprende melhor.</p>
+                            </div>
                         </div>
 
-                        <div class="card-funcs">
-                            <span class="icone">📅</span>                        
-                            <p class="titulo">Estude no seu tempo: integração total com sua agenda</p>
-                            <p class="desc">Um questionário inteligente identifica seu nível, objetivos e estilo de aprendizado — seu plano é gerado em segundos.</p>
+                        <div class="col">
+                            <div class="card-funcs h-100">
+                                <span class="icone">📅</span>                        
+                                <p class="titulo">Estude no seu tempo: integração com agenda</p>
+                                <p class="desc">Sincronize suas lições com o Google Calendar para que o estudo se adapte à sua rotina diária.</p>
+                            </div>
                         </div>
 
-                        <div class="card-funcs">
-                            <span class="icone">📊</span>                        
-                            <p class="titulo">Veja sua evolução em tempo real</p>
-                            <p class="desc">Um questionário inteligente identifica seu nível, objetivos e estilo de aprendizado — seu plano é gerado em segundos.</p>
+                        <div class="col">
+                            <div class="card-funcs h-100">
+                                <span class="icone">📈</span>                        
+                                <p class="titulo">Veja sua evolução em tempo real</p>
+                                <p class="desc">Acompanhe seu progresso com gráficos detalhados e saiba exatamente quanto falta para a fluência.</p>
+                            </div>
                         </div>
 
-                        <div class="card-funcs">
-                            <span class="icone">🎯</span>                        
-                            <p class="titulo">Exercícios que focam nas suas diculdades</p>
-                            <p class="desc">Um questionário inteligente identifica seu nível, objetivos e estilo de aprendizado — seu plano é gerado em segundos.</p>
+                        <div class="col">
+                            <div class="card-funcs h-100">
+                                <span class="icone">🎯</span>                        
+                                <p class="titulo">Exercícios que focam nas suas dificuldades</p>
+                                <p class="desc">Nossa IA identifica onde você mais erra e adapta os exercícios para reforçar esses pontos.</p>
+                            </div>
                         </div>
 
-                        <div class="card-funcs">
-                            <span class="icone">💬</span>                        
-                            <p class="titulo">A plataforma melhora com você</p>
-                            <p class="desc">Um questionário inteligente identifica seu nível, objetivos e estilo de aprendizado — seu plano é gerado em segundos.</p>
+                        <div class="col">
+                            <div class="card-funcs h-100">
+                                <span class="icone">🔄</span>                        
+                                <p class="titulo">A plataforma melhora com você</p>
+                                <p class="desc">Quanto mais você usa, mais a IA entende seu ritmo e refina as sugestões de conteúdo.</p>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="como-funciona" class="steps-section py-5">
+        <div class="container text-center">
+            <span class="badge rounded-pill custom-green-badge mb-3">
+                Como funciona
+            </span>
+            <h3 class="sections-title fw-extra-bold mb-5">4 passos para <span class="title-highlight">começar</span></h3>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <div class="step-number">01</div>
+                        <h4 class="step-title">Crie sua conta em segundos</h4>
+                        <p class="step-desc">Cadastro rápido para você não perder tempo e focar no que importa.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <div class="step-number">02</div>
+                        <h4 class="step-title">Faça o diagnóstico inteligente</h4>
+                        <p class="step-desc">A IA define o ponto de partida ideal analisando seu conhecimento prévio.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <div class="step-number">03</div>
+                        <h4 class="step-title">Receba um plano feito para você</h4>
+                        <p class="step-desc">Um cronograma personalizado gerado especificamente para o seu perfil.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="step-card">
+                        <div class="step-number">04</div>
+                        <h4 class="step-title">Evolua de verdade, no seu ritmo</h4>
+                        <p class="step-desc">Estude quando puder e veja sua fluência crescer a cada lição concluída.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="diferenciais" class="why-section py-5">
+        <div class="container text-center">
+            <span class="badge rounded-pill custom-green-badge mb-3">
+                Diferenciais
+            </span>
+            <h3 class="sections-title fw-extra-bold mb-5">Por que escolher o <span class="title-highlight">PandaPlan</span>?</h3>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="why-card">
+                        <h2 class="why-stat">100%</h2>
+                        <h5 class="why-title">Personalizado pra você</h5>
+                        <p class="why-desc">No seu ritmo, do seu jeito. Sempre.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="why-card">
+                        <h2 class="why-stat">IA</h2>
+                        <h5 class="why-title">Personalizada</h5>
+                        <p class="why-desc">Cada plano é único — feito para o seu perfil.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="why-card">
+                        <h2 class="why-stat">3x</h2>
+                        <h5 class="why-title">Retenção Otimizada</h5>
+                        <p class="why-desc">Metodologia que maximiza o que você retém.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="why-card">
+                        <h2 class="why-stat">24/7</h2>
+                        <h5 class="why-title">Sempre disponível</h5>
+                        <p class="why-desc">Aprenda no seu ritmo, qualquer hora ou lugar.</p>
                     </div>
                 </div>
             </div>
