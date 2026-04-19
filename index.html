@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PandaPlan - Fluência em Mandarim</title>
-    
+
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -18,11 +22,11 @@
                 <img src="./panda-plan.png" alt="Logo" class="nav-logo me-2">
                 <span class="fw-bold fs-4 text-white">Panda<span class="text-success">Plan</span></span>
             </a>
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto align-items-center">
                     <li class="nav-item">
@@ -35,7 +39,7 @@
                         <a class="nav-link px-3 fw-medium" href="#diferenciais">Diferenciais</a>
                     </li>
                 </ul>
-                
+
                 <div class="d-flex align-items-center">
                     <a class="btn btn-nav-cta fw-bold px-4" href="#">Começar!</a>
                 </div>
@@ -46,19 +50,20 @@
     <section class="hero-section d-flex align-items-center">
         <div class="container text-center text-white">
             <div class="row justify-content-center">
-                <div class="col-lg-10 d-flex flex-column align-items-center"> 
+                <div class="col-lg-10 d-flex flex-column align-items-center">
                     <span class="badge rounded-pill custom-badge mb-4">
                         100% personalizado para você
                     </span>
-                    
+
                     <h1 class="hero-title fw-extra-bold mb-4">
                         O caminho mais inteligente para a <span class="text-gradient">fluência em Mandarim </span>
                     </h1>
-                    
+
                     <p class="lead mb-5 text-secondary-custom">
-                        A IA que entende seu perfil e monta um plano de estudos sob medida com vídeos, exercícios adaptativos e integração total com sua rotina.
+                        A IA que entende seu perfil e monta um plano de estudos sob medida com vídeos, exercícios
+                        adaptativos e integração total com sua rotina.
                     </p>
-                    
+
                     <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mb-5 w-100">
                         <a href="#" class="btn btn-success btn-lg px-5 py-3 fw-bold shadow-glow">
                             Começar agora
@@ -82,56 +87,63 @@
                 Funcionalidades
             </span>
 
-            <h3 class="sections-title fw-extra-bold mb-5">Tudo para você <span class="title-highlight">dominar o mandarim</span></h3>
+            <h3 class="sections-title fw-extra-bold mb-5">Tudo para você <span class="title-highlight">dominar o
+                    mandarim</span></h3>
 
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10">
                     <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 align-items-stretch">
                         <div class="col">
                             <div class="card-funcs h-100">
-                                <span class="icone">🤖</span>                        
+                                <span class="icone">🤖</span>
                                 <p class="titulo">Diagnóstico com IA que mapeia seu perfil</p>
-                                <p class="desc">Um questionário inteligente identifica seu nível, objetivos e estilo de aprendizado em segundos.</p>
+                                <p class="desc">Um questionário inteligente identifica seu nível, objetivos e estilo de
+                                    aprendizado em segundos.</p>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card-funcs h-100">
-                                <span class="icone">📚</span>                        
+                                <span class="icone">📚</span>
                                 <p class="titulo">Conteúdo curado para o seu estilo</p>
-                                <p class="desc">Videoaulas, podcasts e textos escolhidos pela IA, alinhados à forma como você aprende melhor.</p>
+                                <p class="desc">Videoaulas, podcasts e textos escolhidos pela IA, alinhados à forma como
+                                    você aprende melhor.</p>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card-funcs h-100">
-                                <span class="icone">📅</span>                        
+                                <span class="icone">📅</span>
                                 <p class="titulo">Estude no seu tempo: integração com agenda</p>
-                                <p class="desc">Sincronize suas lições com o Google Calendar para que o estudo se adapte à sua rotina diária.</p>
+                                <p class="desc">Sincronize suas lições com o Google Calendar para que o estudo se adapte
+                                    à sua rotina diária.</p>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card-funcs h-100">
-                                <span class="icone">📈</span>                        
+                                <span class="icone">📈</span>
                                 <p class="titulo">Veja sua evolução em tempo real</p>
-                                <p class="desc">Acompanhe seu progresso com gráficos detalhados e saiba exatamente quanto falta para a fluência.</p>
+                                <p class="desc">Acompanhe seu progresso com gráficos detalhados e saiba exatamente
+                                    quanto falta para a fluência.</p>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card-funcs h-100">
-                                <span class="icone">🎯</span>                        
+                                <span class="icone">🎯</span>
                                 <p class="titulo">Exercícios que focam nas suas dificuldades</p>
-                                <p class="desc">Nossa IA identifica onde você mais erra e adapta os exercícios para reforçar esses pontos.</p>
+                                <p class="desc">Nossa IA identifica onde você mais erra e adapta os exercícios para
+                                    reforçar esses pontos.</p>
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="card-funcs h-100">
-                                <span class="icone">🔄</span>                        
+                                <span class="icone">🔄</span>
                                 <p class="titulo">A plataforma melhora com você</p>
-                                <p class="desc">Quanto mais você usa, mais a IA entende seu ritmo e refina as sugestões de conteúdo.</p>
+                                <p class="desc">Quanto mais você usa, mais a IA entende seu ritmo e refina as sugestões
+                                    de conteúdo.</p>
                             </div>
                         </div>
                     </div>
@@ -145,7 +157,8 @@
             <span class="badge rounded-pill custom-green-badge mb-3">
                 Como funciona
             </span>
-            <h3 class="sections-title fw-extra-bold mb-5">4 passos para <span class="title-highlight">começar</span></h3>
+            <h3 class="sections-title fw-extra-bold mb-5">4 passos para <span class="title-highlight">começar</span>
+            </h3>
 
             <div class="row g-4 justify-content-center">
                 <div class="col-md-6 col-lg-3">
@@ -159,7 +172,8 @@
                     <div class="step-card">
                         <div class="step-number">02</div>
                         <h4 class="step-title">Faça o diagnóstico inteligente</h4>
-                        <p class="step-desc">A IA define o ponto de partida ideal analisando seu conhecimento prévio.</p>
+                        <p class="step-desc">A IA define o ponto de partida ideal analisando seu conhecimento prévio.
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
@@ -185,7 +199,8 @@
             <span class="badge rounded-pill custom-green-badge mb-3">
                 Diferenciais
             </span>
-            <h3 class="sections-title fw-extra-bold mb-5">Por que escolher o <span class="title-highlight">PandaPlan</span>?</h3>
+            <h3 class="sections-title fw-extra-bold mb-5">Por que escolher o <span
+                    class="title-highlight">PandaPlan</span>?</h3>
 
             <div class="row g-4 justify-content-center">
                 <div class="col-md-6 col-lg-3">
@@ -219,7 +234,144 @@
             </div>
         </div>
     </section>
+    <section class="dashboard py-5">
+        <div class="container text-center mt-5">
+            <span class="badge-preview text-uppercase">Preview</span>
+            <h1 class="main-title">Sua jornada, <span class="text-green">visualizada</span></h1>
+            <p class="subtitle">Acompanhe seu progresso com um dashboard intuitivo e bonito.</p>
+
+            <div class="browser-window">
+                <div class="browser-header">
+                    <div class="mac-dots">
+                        <div class="dot dot-red"></div>
+                        <div class="dot dot-yellow"></div>
+                        <div class="dot dot-green"></div>
+                    </div>
+                    <div class="url-bar">app.pandaplan.com.br/dashboard</div>
+                </div>
+
+                <div class="content-area">
+                    <div class="row text-center border-bottom pb-4">
+                        <div class="col-4 border-end">
+                            <p class="metric-value">147</p>
+                            <p class="metric-label">Palavras aprendidas</p>
+                        </div>
+                        <div class="col-4 border-end">
+                            <p class="metric-value">12</p>
+                            <p class="metric-label">Dias seguidos</p>
+                        </div>
+                        <div class="col-4">
+                            <p class="metric-value">HSK 2</p>
+                            <p class="metric-label">Nível atual</p>
+                        </div>
+                    </div>
+
+                    <div class="chart-header">
+                        <h3 class="chart-title">Progresso Semanal</h3>
+                        <p class="chart-subtitle">Última semana</p>
+                    </div>
+                    <div style="height: 150px; width: 100%;">
+                        <canvas id="progressChart"></canvas>
+                    </div>
+
+                    <div class="row text-center vocab-section">
+                        <div class="col-4">
+                            <p class="char">你好</p>
+                            <p class="pinyin">nǐ hǎo</p>
+                            <p class="translation">Olá</p>
+                        </div>
+                        <div class="col-4">
+                            <p class="char">谢谢</p>
+                            <p class="pinyin">xiè xie</p>
+                            <p class="translation">Obrigado</p>
+                        </div>
+                        <div class="col-4">
+                            <p class="char">学习</p>
+                            <p class="pinyin">xué xí</p>
+                            <p class="translation">Estudar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container d-flex justify-content-center">
+            <div class="cta-card">
+                <div class="bg-char char-top-right">竹</div>
+                <div class="bg-char char-bottom-left">学</div>
+
+                <img src="./panda-mascot.png" alt="Mascote Panda" class="cta-mascot-img">
+                <h2 class="cta-title">Pronto para começar sua<br>jornada?</h2>
+                <p class="cta-subtitle">Junte-se a milhares de estudantes que estão aprendendo mandarim de forma
+                    inteligente e gratuita.</p>
+                <a href="#" class="cta-button">Começar agora — é grátis 🐼</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container border-top pt-4">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+
+                <div class="col-md-4 d-flex align-items-center">
+                    <span class="footer-logo">
+                        <span style="border-radius: 4px; padding: 2px 6px; font-size: 0.7rem; color: white;">🐼</span>
+                        PandaPlan
+                    </span>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <span>© 2026 PandaPlan. Plataforma gratuita de aprendizado de mandarim.</span>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-end footer-links">
+                    <a href="#">Termos</a>
+                    <a href="#">Privacidade</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const ctx = document.getElementById('progressChart').getContext('2d');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'],
+                datasets: [{
+                    label: 'Palavras',
+                    data: [30, 45, 35, 60, 50, 80, 70],
+                    backgroundColor: '#38a169',
+                    borderRadius: 5,
+                    borderSkipped: false,
+                    barPercentage: 0.8
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { enabled: false }
+                },
+                scales: {
+                    x: {
+                        grid: { display: false, drawBorder: false },
+                        ticks: { color: '#888', font: { size: 11 } }
+                    },
+                    y: {
+                        display: false,
+                        grid: { display: false }
+                    }
+                }
+            }
+        });
+    </script>
 </body>
+
 </html>

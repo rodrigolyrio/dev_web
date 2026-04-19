@@ -19,15 +19,15 @@ body {
 /* --- 1. Navbar Estilo "Clear Glass" (Igual à Imagem 2) --- */
 .navbar {
     /* Fundo extremamente transparente para o efeito de vidro claro */
-    background: rgba(255, 255, 255, 0.07); 
-    
+    background: rgba(255, 255, 255, 0.07);
+
     /* O desfoque (blur) cria a sensação de profundidade */
-    backdrop-filter: blur(15px); 
+    backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    
+
     /* Borda inferior sutil para delimitar o menu */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
-    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
     padding: 0.8rem 0;
     transition: all 0.3s ease;
     z-index: 1050;
@@ -73,17 +73,18 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    padding-top: 0; /* Background sobe até o topo */
+    padding-top: 0;
+    /* Background sobe até o topo */
     background-color: var(--bg-dark);
 
-    background-image: 
+    background-image:
         /* Holofote Verde Superior */
         radial-gradient(circle at 50% -20%, rgba(34, 197, 94, 0.25) 0%, transparent 50%),
         /* Escurecedor ajustado para 0.75 conforme solicitado */
         linear-gradient(180deg, rgba(10, 12, 16, 0.75) 0%, rgba(10, 12, 16, 1) 100%),
         /* Imagem de Fundo (Hexágonos) */
-        url('hero-bg.png'); 
-    
+        url('hero-bg.png');
+
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -103,7 +104,7 @@ body {
 .hero-title {
     font-size: 4.5rem;
     line-height: 1.05;
-    letter-spacing: -3px; 
+    letter-spacing: -3px;
     max-width: 900px;
     margin: 0 auto;
     font-weight: 900;
@@ -158,21 +159,22 @@ body {
 
 /* section de funcionalidades */
 
-.func-section{
+.func-section {
     background-color: var(--whiteish-bg);
 }
-.sections-title{
+
+.sections-title {
     font-size: 3rem;
     word-spacing: 0.5rem;
     /* line-height: 1.05; */
     font-weight: 900;
     padding: 1rem;
-    letter-spacing: -3px; 
+    letter-spacing: -3px;
     max-width: 900px;
     margin: 0 auto;
 }
 
-.title-highlight{
+.title-highlight {
     color: var(--green-titles);
     text-decoration: underline var(--green-titles) 1px;
     text-underline-offset: 0.6rem;
@@ -180,8 +182,8 @@ body {
 }
 
 .custom-green-badge {
-    background-color: rgba(219, 234, 224,1);
-    color: rgba(7, 129, 53,1);
+    background-color: rgba(219, 234, 224, 1);
+    color: rgba(7, 129, 53, 1);
     padding: 0.5rem 1rem;
     text-transform: uppercase;
     font-size: 0.65rem;
@@ -190,36 +192,38 @@ body {
 }
 
 
-.card-funcs{
+.card-funcs {
     padding: 2rem;
     align-content: flex-start;
     text-align: left;
 }
 
-.card-funcs .titulo{
+.card-funcs .titulo {
     font-weight: bolder;
 }
 
-.card-funcs .desc{
+.card-funcs .desc {
     color: var(--green-desc);
     font-size: 0.75rem;
 }
 
-.card-funcs .icone{
+.card-funcs .icone {
     font-size: 1.8rem;
 }
 
 /* --- 4. Terceira Dobra: Seção de Passos (Como Funciona - Estilo Claro) --- */
 
 .steps-section {
-    background-color: #ffffff; /* Fundo branco para tons claros */
+    background-color: #ffffff;
+    /* Fundo branco para tons claros */
     padding: 100px 0;
 }
 
 /* Card de Passo Individual */
 .step-card {
     background: #ffffff;
-    border: 1px solid #e5e7eb; /* Borda cinza clara sutil */
+    border: 1px solid #e5e7eb;
+    /* Borda cinza clara sutil */
     border-radius: 24px;
     padding: 40px;
     text-align: left;
@@ -231,16 +235,20 @@ body {
 /* Efeito de destaque no Hover */
 .step-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05); /* Sombra suave */
-    border-color: var(--green-titles); /* Usa o tom de verde dos títulos */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    /* Sombra suave */
+    border-color: var(--green-titles);
+    /* Usa o tom de verde dos títulos */
 }
 
 /* Número Gigante (01, 02, etc.) */
 .step-number {
     font-size: 3.5rem;
     font-weight: 900;
-    color: var(--green-titles); /* O mesmo tom de verde da imagem */
-    opacity: 0.9; /* Transparência para o efeito de marca d'água */
+    color: var(--green-titles);
+    /* O mesmo tom de verde da imagem */
+    opacity: 0.9;
+    /* Transparência para o efeito de marca d'água */
     line-height: 1;
     margin-bottom: 1rem;
     font-family: 'Inter', sans-serif;
@@ -248,7 +256,8 @@ body {
 
 /* Título do Passo */
 .step-title {
-    color: #111111; /* Texto quase preto para contraste no fundo branco */
+    color: #111111;
+    /* Texto quase preto para contraste no fundo branco */
     font-weight: 800;
     font-size: 1.25rem;
     margin-bottom: 0.8rem;
@@ -257,7 +266,8 @@ body {
 
 /* Descrição do Passo */
 .step-desc {
-    color: var(--green-desc); /* Tom de verde acinzentado do seu :root */
+    color: var(--green-desc);
+    /* Tom de verde acinzentado do seu :root */
     font-size: 0.9rem;
     line-height: 1.6;
 }
@@ -282,13 +292,15 @@ body {
 /* --- 5. Quarta Dobra: Seção de Diferenciais (Why PandaPlan) --- */
 
 .why-section {
-    background-color: var(--bg-dark); /* Fundo escuro para contraste */
+    background-color: var(--bg-dark);
+    /* Fundo escuro para contraste */
     padding: 100px 0;
 }
 
 /* Card de Diferencial */
 .why-card {
-    background: rgba(255, 255, 255, 0.03); /* Vidro escuro */
+    background: rgba(255, 255, 255, 0.03);
+    /* Vidro escuro */
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 24px;
     padding: 45px 30px;
@@ -299,7 +311,8 @@ body {
 
 /* Efeito de brilho no Hover */
 .why-card:hover {
-    background: rgba(34, 197, 94, 0.04); /* Leve brilho verde no fundo */
+    background: rgba(34, 197, 94, 0.04);
+    /* Leve brilho verde no fundo */
     border-color: var(--accent-green);
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
@@ -309,7 +322,8 @@ body {
 .why-stat {
     font-size: 3.5rem;
     font-weight: 900;
-    color: var(--accent-green); /* Verde brilhante */
+    color: var(--accent-green);
+    /* Verde brilhante */
     margin-bottom: 15px;
     letter-spacing: -2px;
     display: block;
@@ -352,4 +366,264 @@ body {
     .why-stat {
         font-size: 2.8rem;
     }
+}
+
+/* --- 6. Dashboard Preview --- */
+.dashboard {
+    background-color: var(--whiteish-bg);
+}
+
+.badge-preview {
+    background-color: #d1f2e5;
+    color: #219653;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.main-title {
+    color: #333;
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin-top: 15px;
+}
+
+.text-green {
+    color: #10b981;
+}
+
+.subtitle {
+    color: #6c757d;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.browser-window {
+    background-color: #1c1c1c;
+    border-radius: 16px;
+    padding: 0 8px 8px 8px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.browser-header {
+    background-color: transparent;
+    padding: 16px 12px;
+    display: flex;
+    align-items: center;
+}
+
+.mac-dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dot-red {
+    background-color: #ff5f56;
+}
+
+.dot-yellow {
+    background-color: #ffbd2e;
+}
+
+.dot-green {
+    background-color: #27c93f;
+}
+
+.url-bar {
+    background-color: #2a2a2a;
+    color: #777;
+    font-size: 0.8rem;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    flex-grow: 1;
+    margin-left: 20px;
+    margin-right: 56px;
+}
+
+.content-area {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px 50px;
+    color: #333;
+}
+
+.metric-value {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #10b981;
+    margin-bottom: 0;
+}
+
+.metric-label {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.chart-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.chart-subtitle {
+    font-size: 0.8rem;
+    color: #888;
+    margin: 0;
+}
+
+.vocab-section {
+    margin-top: 50px;
+}
+
+.char {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.pinyin {
+    font-size: 0.8rem;
+    color: #10b981;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.translation {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* --- 7. Call to Action (CTA) --- */
+.cta-section {
+    padding: 60px 20px 80px;
+    background-color: var(--whiteish-bg);
+}
+
+.cta-card {
+    background: linear-gradient(125deg, #107c3e 0%, #084622 100%);
+    border-radius: 20px;
+    padding: 60px 40px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-char {
+    position: absolute;
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.05);
+    font-weight: 300;
+    user-select: none;
+    line-height: 1;
+}
+
+.char-top-right {
+    top: 20px;
+    right: 30px;
+}
+
+.char-bottom-left {
+    bottom: 20px;
+    left: 30px;
+}
+
+.cta-mascot-img {
+    height: 90px;
+    width: auto;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+.cta-title {
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+    line-height: 1.2;
+    color: white;
+}
+
+.cta-subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 500px;
+    margin: 0 auto 35px auto;
+    position: relative;
+    z-index: 2;
+}
+
+.cta-button {
+    background-color: white;
+    color: #111;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    z-index: 2;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    color: #111;
+}
+
+/* --- 8. Rodapé (Footer) --- */
+.site-footer {
+    padding: 40px 0;
+    font-size: 0.85rem;
+    color: #888;
+    background-color: var(--whiteish-bg);
+}
+
+.site-footer .border-top {
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.footer-logo {
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-links a {
+    color: #888;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-green);
 }
