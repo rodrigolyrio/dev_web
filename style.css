@@ -67,7 +67,12 @@ body {
     box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
 }
 
-/* --- 2. Hero Section (Background com Opacidade 0.75) --- */
+.navbar.navbar-scrolled {
+    background: rgba(10, 20, 14, 0.97) !important;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+}
+
+
 .hero-section {
     min-height: 100vh;
     display: flex;
@@ -209,6 +214,8 @@ body {
 
 .card-funcs .icone {
     font-size: 1.8rem;
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
 /* --- 4. Terceira Dobra: Seção de Passos (Como Funciona - Estilo Claro) --- */
@@ -370,222 +377,164 @@ body {
 
 
 /* depoimentos */
-.depoimentos{
+.depoimentos {
     background-color: var(--whiteish-bg);
-
 }
+
 .depoimentos-card {
     background-color: white;
-    padding: 25px;
-    border-radius: 12px;
+    padding: 28px;
+    border-radius: 16px;
     text-align: left;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
 }
+
+.depoimentos-quote {
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--accent-green);
+    font-family: Georgia, serif;
+    margin-bottom: 0.2rem;
+    opacity: 0.6;
+}
+
 
 .depoimentos-text {
     font-size: 0.95rem;
-    color: #555;
-    margin-bottom: 15px;
+    color: #444;
+    line-height: 1.65;
+    flex-grow: 1;
+    margin-bottom: 0;
+}
+
+.depoimentos-divider {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 1.2rem 0;
 }
 
 .depoimentos-name {
     font-weight: 600;
     font-size: 0.9rem;
     color: #111;
+    margin-bottom: 0.1rem;
 }
 
-.depoimentos-desc{
-    font-size: 0.85rem;
+.depoimentos-desc {
+    font-size: 0.8rem;
     color: var(--green-desc);
+    margin: 0;
 }
 
 .depoimentos-avatar {
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     object-fit: cover;
+    border: 2px solid var(--accent-green);
+    flex-shrink: 0;
 }
 
-.depoimentos-avatar {
-    border: 2px solid var(--accent-green);
-}
 
 
 
 /* sobre nos */
-.sobre-nos{
-    background: linear-gradient(180deg, var(--whiteish-bg) 0%, #b7dfc6 40%, #5aad7e 100%);
-}
-.sobre-nos-card {
-    padding: 2rem;
-    gap: 1.5rem;
+.sobre-nos {
+    background-color: var(--bg-dark);
+    padding: 100px 0;
 }
 
-.sobre-nos-text {
-    margin-bottom: 1rem;
+.sobre-nos .sections-title {
+    color: white;
 }
 
-.prof-name {
-    font-weight: 600;
-    font-size: 1.5rem;
+.sobre-nos .title-highlight {
+    color: var(--accent-green);
+    text-decoration: underline var(--accent-green) 1px;
 }
 
-.prof-desc{
-    font-size: 1.15rem;
-    color: var(--green-desc);
+.sobre-nos .custom-green-badge {
+    background-color: rgba(34, 197, 94, 0.1);
+    color: var(--accent-green);
+    border: 1px solid rgba(34, 197, 94, 0.2);
 }
 
-.time-avatar {
+.sobre-nos-subtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.prof-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    overflow: hidden;
+    height: 100%;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.prof-card:hover {
+    background: rgba(34, 197, 94, 0.04);
+    border-color: var(--accent-green);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.prof-card-avatar-wrap {
+    padding: 2rem 2rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.prof-card-avatar {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    border: 0.2rem solid var(--green-desc);
+    border: 3px solid var(--accent-green);
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.25);
 }
 
-
-
-
-
-/* --- 6. Dashboard Preview --- */
-.dashboard {
-    background-color: var(--whiteish-bg);
-}
-
-.badge-preview {
-    background-color: #d1f2e5;
-    color: #219653;
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-weight: bold;
-}
-
-.main-title {
-    color: #333;
-    font-weight: 900;
-    font-size: 2.8rem;
-    margin-top: 15px;
-}
-
-.text-green {
-    color: #10b981;
-}
-
-.subtitle {
-    color: #6c757d;
-    font-size: 1rem;
-    margin-bottom: 40px;
-}
-
-.browser-window {
-    background-color: #1c1c1c;
-    border-radius: 16px;
-    padding: 0 8px 8px 8px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-    margin: 0 auto;
-    max-width: 900px;
-}
-
-.browser-header {
-    background-color: transparent;
-    padding: 16px 12px;
-    display: flex;
-    align-items: center;
-}
-
-.mac-dots {
-    display: flex;
-    gap: 8px;
-}
-
-.dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-}
-
-.dot-red {
-    background-color: #ff5f56;
-}
-
-.dot-yellow {
-    background-color: #ffbd2e;
-}
-
-.dot-green {
-    background-color: #27c93f;
-}
-
-.url-bar {
-    background-color: #2a2a2a;
-    color: #777;
-    font-size: 0.8rem;
+.prof-card-body {
+    padding: 0 1.8rem 2rem;
     text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    flex-grow: 1;
-    margin-left: 20px;
-    margin-right: 56px;
 }
 
-.content-area {
-    background-color: white;
-    border-radius: 10px;
-    padding: 40px 50px;
-    color: #333;
+.prof-card-tag {
+    display: inline-block;
+    background-color: rgba(34, 197, 94, 0.1);
+    color: var(--accent-green);
+    border: 1px solid rgba(34, 197, 94, 0.2);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    margin-bottom: 0.6rem;
 }
 
-.metric-value {
-    font-size: 1.8rem;
-    font-weight: 900;
-    color: #10b981;
-    margin-bottom: 0;
+.prof-card-name {
+    color: white;
+    font-weight: 800;
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+    letter-spacing: -0.5px;
 }
 
-.metric-label {
-    font-size: 0.85rem;
-    color: #888;
-}
-
-.chart-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-.chart-title {
-    font-size: 1rem;
-    font-weight: bold;
+.prof-card-desc {
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    line-height: 1.65;
     margin: 0;
 }
 
-.chart-subtitle {
-    font-size: 0.8rem;
-    color: #888;
-    margin: 0;
-}
 
-.vocab-section {
-    margin-top: 50px;
-}
 
-.char {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 2px;
-}
 
-.pinyin {
-    font-size: 0.8rem;
-    color: #10b981;
-    font-weight: bold;
-    margin-bottom: 2px;
-}
 
-.translation {
-    font-size: 0.85rem;
-    color: #888;
-}
 
 /* --- 7. Call to Action (CTA) --- */
 .cta-section {
