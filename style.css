@@ -19,7 +19,7 @@ body {
 /* --- 1. Navbar Estilo "Clear Glass" (Igual à Imagem 2) --- */
 .navbar {
     /* Fundo extremamente transparente para o efeito de vidro claro */
-    background: rgba(255, 255, 255, 0.07);
+    background: rgba(68 92 76, 0.5);
 
     /* O desfoque (blur) cria a sensação de profundidade */
     backdrop-filter: blur(15px);
@@ -367,6 +367,81 @@ body {
         font-size: 2.8rem;
     }
 }
+
+
+/* depoimentos */
+.depoimentos{
+    background-color: var(--whiteish-bg);
+
+}
+.depoimentos-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.depoimentos-text {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.depoimentos-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #111;
+}
+
+.depoimentos-desc{
+    font-size: 0.85rem;
+    color: var(--green-desc);
+}
+
+.depoimentos-avatar {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.depoimentos-avatar {
+    border: 2px solid var(--accent-green);
+}
+
+
+
+/* sobre nos */
+.sobre-nos{
+    background: linear-gradient(180deg, var(--whiteish-bg) 0%, #b7dfc6 40%, #5aad7e 100%);
+}
+.sobre-nos-card {
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.sobre-nos-text {
+    margin-bottom: 1rem;
+}
+
+.prof-name {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.prof-desc{
+    font-size: 1.15rem;
+    color: var(--green-desc);
+}
+
+.time-avatar {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0.2rem solid var(--green-desc);
+}
+
+
+
+
 
 /* --- 6. Dashboard Preview --- */
 .dashboard {
