@@ -1,4 +1,4 @@
-/* --- Variáveis Globais --- */
+/* --- globais --- */
 :root {
     --bg-dark: #0a0c10;
     --accent-green: #22c55e;
@@ -16,18 +16,12 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* --- 1. Navbar Estilo "Clear Glass" (Igual à Imagem 2) --- */
+/* navbar*/
 .navbar {
-    /* Fundo extremamente transparente para o efeito de vidro claro */
     background: rgba(68 92 76, 0.5);
-
-    /* O desfoque (blur) cria a sensação de profundidade */
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-
-    /* Borda inferior sutil para delimitar o menu */
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-
     padding: 0.8rem 0;
     transition: all 0.3s ease;
     z-index: 1050;
@@ -49,7 +43,6 @@ body {
     color: var(--accent-green) !important;
 }
 
-/* Botão da Navbar (Verde Sólido e Elegante) */
 .btn-nav-cta {
     background-color: var(--accent-green);
     color: white !important;
@@ -72,22 +65,17 @@ body {
     box-shadow: 0 2px 20px rgba(0,0,0,0.4);
 }
 
-
+/* hero */
 .hero-section {
     min-height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
     padding-top: 0;
-    /* Background sobe até o topo */
     background-color: var(--bg-dark);
-
     background-image:
-        /* Holofote Verde Superior */
         radial-gradient(circle at 50% -20%, rgba(34, 197, 94, 0.25) 0%, transparent 50%),
-        /* Escurecedor ajustado para 0.75 conforme solicitado */
         linear-gradient(180deg, rgba(10, 12, 16, 0.75) 0%, rgba(10, 12, 16, 1) 100%),
-        /* Imagem de Fundo (Hexágonos) */
         url('hero-bg.png');
 
     background-size: cover;
@@ -95,9 +83,6 @@ body {
     background-repeat: no-repeat;
 }
 
-/* --- 3. Tipografia e Panda --- */
-
-/* Panda Mascot posicionado abaixo dos botões */
 .hero-panda {
     height: 100px;
     width: auto;
@@ -105,7 +90,6 @@ body {
     opacity: 0.9;
 }
 
-/* Título Impactante (Mais alto que largo) */
 .hero-title {
     font-size: 4.5rem;
     line-height: 1.05;
@@ -116,7 +100,6 @@ body {
 
 }
 
-/* Badge Superior */
 .custom-badge {
     background-color: rgba(34, 197, 94, 0.1);
     color: var(--accent-green);
@@ -128,7 +111,6 @@ body {
     letter-spacing: 1px;
 }
 
-/* --- Estilização dos Botões do Hero --- */
 .btn-success {
     background-color: var(--accent-green);
     border: none;
@@ -218,7 +200,7 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* --- 4. Terceira Dobra: Seção de Passos (Como Funciona - Estilo Claro) --- */
+/*como funciona*/
 
 .steps-section {
     background-color: #ffffff;
@@ -226,11 +208,9 @@ body {
     padding: 100px 0;
 }
 
-/* Card de Passo Individual */
 .step-card {
     background: #ffffff;
     border: 1px solid #e5e7eb;
-    /* Borda cinza clara sutil */
     border-radius: 24px;
     padding: 40px;
     text-align: left;
@@ -239,47 +219,36 @@ body {
     position: relative;
 }
 
-/* Efeito de destaque no Hover */
 .step-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
-    /* Sombra suave */
     border-color: var(--green-titles);
-    /* Usa o tom de verde dos títulos */
 }
 
-/* Número Gigante (01, 02, etc.) */
 .step-number {
     font-size: 3.5rem;
     font-weight: 900;
     color: var(--green-titles);
-    /* O mesmo tom de verde da imagem */
     opacity: 0.9;
-    /* Transparência para o efeito de marca d'água */
     line-height: 1;
     margin-bottom: 1rem;
     font-family: 'Inter', sans-serif;
 }
 
-/* Título do Passo */
 .step-title {
     color: #111111;
-    /* Texto quase preto para contraste no fundo branco */
     font-weight: 800;
     font-size: 1.25rem;
     margin-bottom: 0.8rem;
     letter-spacing: -0.5px;
 }
 
-/* Descrição do Passo */
 .step-desc {
     color: var(--green-desc);
-    /* Tom de verde acinzentado do seu :root */
     font-size: 0.9rem;
     line-height: 1.6;
 }
 
-/* Ajustes de Título e Badge para esta seção clara */
 .steps-section .sections-title {
     color: #000000;
 }
@@ -296,18 +265,15 @@ body {
 }
 
 
-/* --- 5. Quarta Dobra: Seção de Diferenciais (Why PandaPlan) --- */
+/* diferenciais */
 
 .why-section {
     background-color: var(--bg-dark);
-    /* Fundo escuro para contraste */
     padding: 100px 0;
 }
 
-/* Card de Diferencial */
 .why-card {
     background: rgba(255, 255, 255, 0.03);
-    /* Vidro escuro */
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 24px;
     padding: 45px 30px;
@@ -316,27 +282,22 @@ body {
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Efeito de brilho no Hover */
 .why-card:hover {
     background: rgba(34, 197, 94, 0.04);
-    /* Leve brilho verde no fundo */
     border-color: var(--accent-green);
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
-/* Estatística/Número de Destaque (100%, IA, 3x) */
 .why-stat {
     font-size: 3.5rem;
     font-weight: 900;
     color: var(--accent-green);
-    /* Verde brilhante */
     margin-bottom: 15px;
     letter-spacing: -2px;
     display: block;
 }
 
-/* Título do Card */
 .why-title {
     color: #ffffff;
     font-weight: 700;
@@ -344,14 +305,12 @@ body {
     margin-bottom: 12px;
 }
 
-/* Descrição do Card */
 .why-desc {
     color: var(--text-muted);
     font-size: 0.95rem;
     line-height: 1.6;
 }
 
-/* Ajustes de Títulos para seção escura */
 .why-section .sections-title {
     color: white;
 }
@@ -361,14 +320,12 @@ body {
     text-decoration: underline var(--accent-green) 1px;
 }
 
-/* Ajuste da Badge para fundo escuro */
 .why-section .custom-green-badge {
     background-color: rgba(34, 197, 94, 0.1);
     color: var(--accent-green);
     border: 1px solid rgba(34, 197, 94, 0.2);
 }
 
-/* Responsividade */
 @media (max-width: 991px) {
     .why-stat {
         font-size: 2.8rem;
@@ -536,7 +493,7 @@ body {
 
 
 
-/* --- 7. Call to Action (CTA) --- */
+/*cta*/
 .cta-section {
     padding: 60px 20px 80px;
     background-color: var(--whiteish-bg);
@@ -621,7 +578,7 @@ body {
     color: #111;
 }
 
-/* --- 8. Rodapé (Footer) --- */
+/*footer*/
 .site-footer {
     padding: 40px 0;
     font-size: 0.85rem;
